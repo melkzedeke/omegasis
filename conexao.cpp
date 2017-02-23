@@ -22,7 +22,7 @@ void conecta(QSqlDatabase *db){
     my_database =settings.value("omegasis/database").toString ();
     my_username =settings.value("omegasis/username").toString ();
     my_password =settings.value("omegasis/password").toString ();
-    //fim das variáveis
+    //fim das variáveis 1
     *db = QSqlDatabase::addDatabase("QMYSQL","01");
     db->setHostName(my_hostname);
     db->setDatabaseName(my_database);
