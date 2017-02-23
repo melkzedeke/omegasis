@@ -111,7 +111,7 @@ void FrmClientes::pegadados(QString x)
         QString codx =x;
         QString sql = "SELECT * FROM `Cliente` where Cod="+x+"";
         query.exec(sql);
-        //funcionou
+        //funcionou bem
         while (query.next()) {
             QString id = query.value(0).toString();
             QString name = query.value(1).toString();

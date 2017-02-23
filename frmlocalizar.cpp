@@ -37,7 +37,7 @@ void FrmLocalizar::on_btn_localizar_clicked()
         QSqlQuery query(db);
         QString sql = "SELECT * FROM `Cliente` where Nome like '"+ui->edt_localizar->text()+"%' limit 20";
         query.exec(sql);
-        //funcionou
+        //funcionou bem
         int contador =0;
         while (query.next()) {
             id = query.value(0).toString();
